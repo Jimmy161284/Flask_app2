@@ -1,0 +1,20 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+About us
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{ url_for('.static',filename='about us.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+   <h1>About Us</h1>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis voluptates fugiat corrupti nemo vero officia
+      facere exercitationem cum nobis, iusto impedit ipsum delectus dicta fuga numquam dolores dolorum ipsa quibusdam.
+   </p>
+</div><!--  /container-->
+{% endblock %}
